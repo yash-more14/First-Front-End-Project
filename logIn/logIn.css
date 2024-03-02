@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #e87cac;
+    --footer-color: rgb(218, 218, 218);
+    --body-color:rgb(210, 210, 210);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Gupter&family=Protest+Strike&display=swap');
+
+@media only screen and (max-width: 768px) {
+    .searchSec
+    {
+        margin-top: 20px;
+        display: flex;
+        justify-content: start  !important;
+    }
+
+    
+
+    .logCartSec ul{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (max-width: 365px) 
+{ 
+    .navbar,
+    .logIn,
+    footer
+    {
+        width:133% !important;
+        overflow: hidden;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+        background-color: var(--body-color);
+}
+
+/* Login page styling */
+.logIn {
+    background-color: #f9f9f9;
+    margin-bottom: 80px;
+}
+
+.logIn h1 {
+    padding-top: 19px;
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+    background-image: linear-gradient(to top, #f2c6c6, var(--brand-color), #e5659e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-family: 'Gupter', serif;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height:80%;
+    margin: 1px auto;
+    padding: 40px;
+    background: white;
+    border: 2px solid var(--brand-color);
+
+}
+
+#emailIn,
+input[type='password'],
+.form-logIn-btn {
+    width: 50%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid var(--footer-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-logIn-btn{
+    color: var(--brand-color);
+    background: white;
+    border: 2px solid var(--brand-color);
+    width: 120px;
+    transition: width 1s;
+}
+
+.form-logIn-btn:hover {
+    background: var(--brand-color);
+    color: white;
+    width: 40%;
+}
+
+@media screen and (min-width: 400px){ 
+    .btn-pink{
+        margin-top:20px;
+    }
+}
+

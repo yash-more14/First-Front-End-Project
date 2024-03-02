@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #e87cac;
+    --footer-color: rgb(218, 218, 218);
+    --body-color: rgb(210, 210, 210);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter&family=Protest+Strike&display=swap');
+
+
+
+/*   All products Image slide    */
+.kids {
+    box-shadow: 0px 0px 6px 0px white;
+}
+
+.product-col {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 0px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 50vh;
+}
+
+.kids-products {
+    background-color: #f9f9f9;
+}
+
+.kids-products h1 {
+    margin: 9px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+    background-image: linear-gradient(to top, #f2c6c6, var(--brand-color), #e5df65);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+
+}
+
+.kids-products h2 {
+    margin: 9px 0px 0px 0px;
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 40px;
+
+}
+
+h2 a:hover {
+    border-bottom: 3px solid var(--brand-color);
+
+}
+
+.kids-products a {
+    text-decoration: none;
+    background-image: linear-gradient(to top, #988ed3, skyblue, #9486fb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-title {
+    font-family: 'Gupter', serif;
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 20px;
+    height: 4%;
+    margin: 12px 0px 0px 10px;
+}
+
+
+.price {
+    font-family: 'Gupter', serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 0px rgb(199, 199, 199);
+}
+
+.card-text {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+.card-body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    font-family: 'Gupter', serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.cart-btn {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    font-family: 'Gupter', serif;
+    border-radius: 4px;
+    border: 1px solid white;
+    display: flex;
+    font-size: 100%;
+    flex-wrap: nowrap;
+    margin: 0px 0px 15px 0px;
+    width: 100%;
+    background-color: var(--brand-color);
+}
+
+
+
+.cart-btn i {
+    font-size: 120%;
+    padding: 0px 14px 0px 4px;
+    margin: 4px 8px 5px 0px;
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width:365px) {
+    .kids-products {
+        width: 130% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px !important;
+        overflow: hidden;
+    }
+}
+
+/* media querry  */
+
+@media only screen and (max-height:540px) {
+    .cart-btn {
+        width: 40%;
+    }
+
+    .card {
+        margin: 0px !important;
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width:510px) {
+    .card
+    {
+        width: 100% !important;
+        padding: 1px !important;
+    }
+}
+
+@media only screen and (max-width:291px)
+{
+ .btn-div button i
+ {
+    display: none;
+ }  
+
+ button
+ {
+    display: flex;
+    justify-content: center;
+ }
+}

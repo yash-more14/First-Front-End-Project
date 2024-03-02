@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    position: relative;
+}
+
+:root {
+    --brand-color: #e87cac;
+    --footer-color: rgb(218, 218, 218);
+    --body-color: rgb(210, 210, 210);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter&family=Protest+Strike&display=swap');
+
+@media only screen and (max-width: 768px) {
+    .searchSec {
+        margin-top: 20px;
+        display: flex;
+        justify-content: start !important;
+    }
+
+
+
+    .logCartSec ul {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+
+    .navbar,
+    footer {
+        width: 133% !important;
+        overflow: hidden;
+    }
+
+    .bg-pink{
+        width: 133% !important;
+    }
+
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+}
+
+
+.title a {
+    margin: 2px 0px 0px 12px;
+    font-size: 120%;
+    text-decoration: none;
+    font-family: 'Lobster', sans-serif;
+    background-image: linear-gradient(to right, #f0f7c8, var(--brand-color), #e5659e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    border-radius: 5px;
+    margin: 17px 8px 0px 0px
+}
+
+
+.searchSec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-btn:hover {
+    color: var(--brand-color);
+    border: 2px solid var(--brand-color);
+    background-color: white;
+}
+
+
+.searchIN {
+    width: 270px !important;
+    height: 32px;
+    border-radius: 5px 0px 0px 5px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-right: 1px !important;
+}
+
+
+.search-btn {
+    margin: 0px !important;
+    border: none;
+    border-radius: 0vh 3vh 3vh 0vh;
+    background-color: var(--brand-color);
+    color: white;
+    font-size: 16px;
+    padding: 1px;
+    width: 80px;
+    height: 32px;
+    overflow: auto;
+}
+
+
+.cartIcon {
+    font-size: 30px !important;
+    margin: 5px 0px 0px 40px;
+    color: var(--brand-color) !important;
+    cursor: pointer;
+}
+
+.logIn-btn {
+    margin: 17px 10px 0px 20px;
+    border: none;
+    border-radius: 1vh;
+    background-color: var(--brand-color);
+    width: 80px;
+    height: 32px;
+}
+
+.logIn-btn a {
+    text-align: center;
+    padding: 2px;
+    color: white;
+    position: relative;
+}
+
+.logIn-btn a:hover {
+    color: var(--brand-color);
+    border: 2px solid var(--brand-color);
+    background-color: white;
+    border-radius: 1vh;
+
+}
+
+
+
+.bg-pink {
+    background: var(--brand-color);
+
+}
+
+.nav-bar a:hover
+{
+    box-shadow: white 0px 0px 4px 0px;
+}
+ 
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 11px;
+    font-size: 16px;
+    background: var(--brand-color);
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 10px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}

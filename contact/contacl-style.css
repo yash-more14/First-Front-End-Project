@@ -1,0 +1,170 @@
+:root {
+    --brand-color: #e87cac;
+    --footer-color: rgb(218, 218, 218);
+    --body-color: rgb(210, 210, 210);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gupter&family=Protest+Strike&display=swap');
+
+
+/* media query  */
+
+@media only screen and (max-width:800px) {
+    .contentRow{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 10px;
+        row-gap: 15px;
+    }
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+@media only screen and (max-width: 365px) 
+{ 
+    .formContainer
+    {
+        width: 133% !important;
+    }
+}
+
+
+.contact {
+    box-shadow: 0px 0px 6px 0px white;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+        background-color: var(--body-color);
+}
+
+/* Form container  */
+
+
+
+#formName {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'Protest Strike', sans-serif;
+    background-image: linear-gradient(to top, #988ed3,skyblue, #9486fb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+}
+
+.formContainer {
+
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.formContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.formContainer form {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/premium-photo/dress-hanging-rack-viva-magenta-background-creative-composition-pink-background_576429-2033.jpg?size=626&ext=jpg&ga=GA1.1.491080204.1708017569&semt=ais);
+}
+
+form label {
+    font-size: larger;
+    color: white;
+    /* padding:10px ; */
+    margin: 30px 0px 4px 10px;
+}
+
+.formContainer input,
+.submit {
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    width: 70%;
+    margin-left: 10px;
+}
+
+textarea {
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+    width: 72%;
+    margin-left: 10px;
+}
+
+.submit {
+    margin-top: 19px;
+    color: white;
+    background-color: var(--brand-color);
+    border-radius: 20px;
+    padding: 4px;
+    width: 73%;
+    border: none;
+}
+
+.headerCont{
+    margin: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0% !important;
+}
+.submit:hover {
+    border: solid var(--brand-color);
+    background-color: white;
+    color: var(--brand-color);
+}
+
+/*   footer    */
+footer {
+    background-color: var(--footer-color);
+    text-align: center;
+    padding: 35px;
+    position: relative;
+    ;
+}
+
+.col-12 {
+
+    background: #000;
+    width: 1005;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+footer .list-Head {
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list-item {
+    font-size: large;
+}
+
+footer li {
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+}
+
+.copyRight {
+    background-color: black;
+    padding: 10px 0px 0px 0px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}

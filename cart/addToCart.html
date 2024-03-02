@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Show Cart | Cart |</title>
+
+    <!-- Font Family Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/cart/addToCart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9b7d5810f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Header -->
+    <header id="header">
+        <!-- External JavaScript for Header -->
+        <!-- (Not included in provided code) -->
+    </header>
+
+    <!-- Cart Products -->
+    <div class="cart-products">
+        <h1>Your Cart</h1>
+        <hr>
+        <div class="row firstCart">
+            <!-- Product Image -->
+
+            <div class="col-sm-8 firstcol text-center">
+                <div>
+                    <img src="https://th.bing.com/th/id/OIP.Emxt7TbV90FBoqB5P20jLQHaJ4?w=202&h=270&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        alt="Mens Jense Image">
+                    <!-- Quantity Controls -->
+                    <div class="countDiv">
+                        <button style="border: none;"><span class="delete" onclick="subItem()">-</span></button>
+                        <div type="number" readonly class="count">1</div>
+                        <button style="border: none;"><span class="add" onclick="addItem()">+</span></button>
+                    </div>
+                    <!-- External JavaScript for Adding to Cart -->
+                    <script src="addToCart.js"></script>
+                </div>
+
+                <!-- Product Information -->
+                <div class="productInfo text-center">
+                    <div>
+                        <h5 class="prName">Mens Premium Jense</h5>
+                        <label for="size" class="size">Size : </label>
+                        <!-- Size Selection -->
+                        <select name="size" class="size">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <!-- Product Price -->
+                        <h5 class="prPrice"><span class="cutPrice">$110</span>$100 <span class="offer">10% Off</span>
+                        </h5>
+                        <!-- Delete Product Icon -->
+                        <i class="fa-sharp fa-solid deleteI fa-trash cartTrash" onclick="deleteCart()"></i>
+                    </div>
+                    <!-- Section End Tag Without Corresponding Start Tag -->
+                    <!-- </section> -->
+                </div>
+            </div>
+
+            <!-- Price Details -->
+            <div class="col-sm-4 priceDetails">
+                <h2 class="text-center">Price Details</h2>
+                <hr>
+
+                <!-- Price -->
+                <div class="priceCart">
+                    <p class="price">Price :</p>
+                    <span class="price">$100</span>
+                </div>
+
+                <!-- Delivery Charges -->
+                <div class="deliverCharge">
+                    <p>Delivery Charges :</p>
+                    <span>$20</span>
+                </div>
+                <hr>
+
+                <!-- Total Price -->
+                <div class="total">
+                    <p>Total :</p>
+                    <span>$120</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Button -->
+        <div class="row orderRow justify-content-center">
+            <div class="orderCol text-center col-sm-12">
+                <div class="continer">
+                    <button class="orderBtn" type="submit" onclick="sucessfull()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- External JavaScript for Footer -->
+    </footer>
+
+    <script src="/javaScript/index.js"></script>
+</body>
+
+</html>
